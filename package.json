@@ -1,0 +1,11 @@
+{
+  "name": "test_release",
+  "version": "1.1.0",
+  "main": "index.js",
+  "repository": "git@github.com:jtassin/test_release.git",
+  "author": "Julien TASSIN <julien.tassin.pro@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "release": "git status --porcelain && yarn version --minor && git push origin $npm_package_version"
+  }
+}
