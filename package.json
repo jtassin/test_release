@@ -6,7 +6,7 @@
   "author": "Julien TASSIN <julien.tassin.pro@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "release": "git status --porcelain && yarn version --minor",
+    "release": "git diff --exit-code && yarn version --minor",
     "postrelease": "git push origin $npm_package_version"
   }
 }
