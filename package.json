@@ -8,5 +8,8 @@
   "scripts": {
     "release": "git diff-index --quiet HEAD && yarn version --minor",
     "postrelease": "git push origin $npm_package_version"
+  },
+  "devDependencies": {
+    "auto-changelog": "^1.11.0"
   }
 }
