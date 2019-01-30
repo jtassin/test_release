@@ -1,6 +1,6 @@
 {
   "name": "test_release",
-  "version": "1.14.0",
+  "version": "1.15.0",
   "main": "index.js",
   "repository": "git@github.com:jtassin/test_release.git",
   "author": "Julien TASSIN <julien.tassin.pro@gmail.com>",
