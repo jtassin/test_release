@@ -8,7 +8,7 @@
   "scripts": {
     "prerelease": "git checkout master && git pull && git diff-index --quiet HEAD",
     "release": "git push && yarn version --minor",
-    "postrelease": "auto-changelog --issue-url https://www.pivotaltracker.com/story/show/{id} && git push origin $npm_package_version"
+    "postrelease": "auto-changelog --issue-url https://www.pivotaltracker.com/story/show/{id} && && git add CHANGELOG.md && git commit -m 'update changelog' && git push origin $npm_package_version"
   },
   "devDependencies": {
     "auto-changelog": "^1.11.0"
